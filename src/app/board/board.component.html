@@ -1,0 +1,18 @@
+<ng-container *ngIf="board;else noItems">
+  <column columnTitle="Happy"
+    [items]="board['happy']"
+    (addNewItem)="openDialog($event)"
+  ></column>
+    <column columnTitle="Meh"
+    [items]="board['meh']"
+    (addNewItem)="openDialog($event)"
+  ></column>
+    <column columnTitle="Sad"
+    [items]="board['sad']"
+    (addNewItem)="openDialog($event)"
+  ></column>
+</ng-container>
+ <ng-template #noItems>
+  <h1>This board is empty!</h1>
+  <h3>Add some items!</h3>
+</ng-template>

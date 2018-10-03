@@ -1,12 +1,9 @@
-p {
-  font-family: Lato;
-}
-
-/* main {
+:host {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
+
 column {
   padding: 0 12px;
 }
@@ -17,4 +14,4 @@ column:first-of-type {
 
 column:last-of-type {
   background-color: goldenrod
-} */
+}
